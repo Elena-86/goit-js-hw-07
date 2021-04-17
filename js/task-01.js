@@ -1,13 +1,11 @@
-const categoriesList = document.querySelectorAll(".item");
+const categoriesList = categories.children;
 console.log(`В списке ${categoriesList.length} категории.`);
-console.log(categoriesList.lastElementChild);
-const headingText = document.getElementsByTagName("h2");
-
-
-Array.from(headingText).forEach(element => {
- console.log(element.innerText);   
-});
-
-
-
-console.log(' ');
+for (let i = 0; i < categoriesList.length; i += 1) {
+    const listElement = categoriesList[i];
+    const headingText = listElement.querySelector("h2");
+    const categoriesQuantity = listElement.querySelector("ul").children.length;
+    console.log(`
+    Категория: ${headingText.innerText}
+    Количество элементов: ${categoriesQuantity}
+    `);
+};

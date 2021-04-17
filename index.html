@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
     <!-- The first task -->
+
 <ul id="categories">
     <li class="item">
         <h2>Животные</h2>
@@ -40,6 +43,47 @@
         </ul>
     </li>
 </ul>
-<script src="./js/task-01.js" type="module"></script>
+
+<!-- The second task -->
+
+<ul id="ingredients"></ul>
+
+<!-- The third task -->
+
+<ul class="image-style" id="gallery"></ul>
+
+<!-- The fourth  task -->
+
+<div id="counter">
+    <button type="button" data-action="decrement">-1</button>
+    <span id="value">0</span>
+    <button type="button" data-action="increment">+1</button>
+</div>
+
+<!-- The fifth task -->
+
+<input type="text" placeholder="Ваше имя?" id="name-input" />
+<h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+
+<!-- The sixth task -->
+
+<input type="text"
+ id="validation-input"
+ data-length="6"
+ placeholder="Введи 6 символов" />
+
+ <!-- The seventh task -->
+
+<input id="font-size-control" type="range" />
+<br />
+<span id="text">Абракадабра!</span>
+
+<script src="./js/task-01.js" type="module"></script> 
+<script src="./js/task-02.js" type="module"></script>
+<script src="./js/task-03.js" type="module"></script>
+<script src="./js/task-04.js" type="module"></script>
+<script src="./js/task-05.js" type="module"></script>
+ <script src="js/task-06.js" type="module"></script>
+<script src="./js/task-07.js" type="module"></script>
 </body>
 </html>

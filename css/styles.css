@@ -1,0 +1,42 @@
+/* The third task  */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 30vw;
+
+  list-style-type: none;
+}
+
+/* The fifth task */
+
+#name-input {
+  margin-top: 40px;
+}
+
+/* The sixth task */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+/*  The seventh task  */
+
+#font-size-control {
+  display: block;
+  margin-top: 40px;
+}
