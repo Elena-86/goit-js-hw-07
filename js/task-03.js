@@ -17,14 +17,20 @@ const images = [
 ];
 
 const imgContainerElement = document.querySelector("ul#gallery");
+const imageCollection = makeImgCollection(images);
 
-const makeImgCollection = images => {
-  return images.forEach(image => {
-    
-      imgContainerElement.insertAdjacentHTML('beforeEnd', `.image-style<li><img src="${image.url}" alt="${image.alt}"></li>`);
-  });
-};
- 
+imgContainerElement.insertAdjacentHTML('beforeend',imageCollection);
+
+function makeImgCollection(images) {
+  return images
+    .map(({ url, alt }) => {
+      return `      
+      <li class="gallery-style"><img src="${url}" alt="${alt}"></li>
+      `;
+    })
+    .join('');
+}
+
   makeImgCollection(images);
 
 
